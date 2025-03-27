@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    /* font */
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    min-height: calc(80vh - 18px);
+}
+
+header {
+    padding: 40px;
+    text-align: center;
+    color: #FFF;
+    background: linear-gradient(45deg, #c51c10, #c21307);
+    background-size: 200% 200%;
+    animation: glowing 10s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.bolamedio {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.pokeball {
+    transition: transform 0.2s ease-in-out;
+    /* Agregamos una transición suave al efecto */
+}
+
+.pokeball:hover {
+    transform: translateY(-10px);
+    /* Deslizamos la imagen 10px hacia arriba al pasar el cursor */
+}
+
+.btnpokemon {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnpokemon:hover {
+    background-color: #0062cc;
+}
+
+.one-column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.two-column {
+    padding: 20px 20px 5px 20px;
+    float: left;
+    width: 50%;
+}
+
+.three-column {
+    padding: 100px 0px 30px 0px;
+    text-align: center;
+    float: left;
+    width: 33.33%;
+}
+
+.two-columnfoot {
+    float: left;
+    width: 50%;
+    padding: 2%;
+    font-size: 50px;
+}
+
+.four-column {
+    float: left;
+    width: 25%;
+    padding: 2%;
+}
+
+.four-column p {
+    text-align: center;
+}
+
+#footer {
+    background-color: #3c2f2f;
+    color: white;
+}
+
+#footer p {
+    font-size: 20px;
+    text-align: left;
+}
+
+.footer-image {
+    padding-top: 60px;
+    position: absolute;
+    left: -200px;
+    animation: slideRight 15s linear infinite;
+}
+
+@keyframes slideRight {
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: calc(100% - 50px);
+    }
+}
+
+.button-1 {
+    background-color: #3c2f2f;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button-1:hover {
+    background-color: #4b4545;
+    color: white;
+}
+
+.button-2 {
+    background-color: #854442;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button-2:hover {
+    background-color: #c26864;
+    color: white;
+}
+
+.back {
+    width: 5%;
+    float: left;
+    padding: 10px 0px 0px 20px;
+}
+
+.form-control {
+    width: 50%;
+    text-align: center;
+}
+
+
+/* FIN */
+
+.logo-btn-out {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo-btn-out img {
+    width: 200px;
+}
+
+.logo-btn-out button {
+    background-color: #333099;
+    padding: 10px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    border: 1px solid #333099;
+}
+
+.btn-add-ataque {
+    background-color: #333099;
+    padding: 10px 30px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid #333099;
+}
+
+.ataque-select {
+    margin-bottom: 10px;
+}

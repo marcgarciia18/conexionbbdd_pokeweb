@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login POKEWEB</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="../img/pokeball.png">
+</head>
+
+<body>
+    <div class="loginbox">
+        <img src="../img/pokedex_logo.png" alt="">
+        <form action="../processes/login.proc.php" method="POST">
+            <div id="divmail">
+                <div id="cajamail">
+                    <input type="text" name="usuario" id="usuario" placeholder="Introducir usuario">
+                    <div id="divmail">
+                    </div>
+                </div>
+                <div id="divpass">
+                    <div id="cajapass">
+                        <input type="password" name="pass" id="pass" placeholder="Introducir contraseña">
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" name="login" value="Login"></input>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
